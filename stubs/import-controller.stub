@@ -1,0 +1,15 @@
+<?php
+
+namespace {{ namespace }};
+
+use GuestcmsDataSynchronize\Http\Controllers\ImportController;
+use GuestcmsDataSynchronize\Importer\Importer;
+use {{ importerNamespace }};
+
+class {{ class }} extends ImportController
+{
+    protected function getImporter(): Importer
+    {
+        return {{ importer }}::make();
+    }
+}
